@@ -1,5 +1,5 @@
 McMillan
-	a (ash)|phonetics_ash
+	æ (ash)|phonetics_ash
 	i short: sit|phonetics_i_short
 	i long: see|phonetics_i_long
 	o short: hot|phonetics_o_short
