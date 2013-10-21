@@ -1,0 +1,167 @@
+body {
+    color: black;
+    background: white;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: small;
+
+}
+
+#pojemnik {
+    width: 980px;
+    margin: 50px auto;
+}
+
+#menu {
+    width: 280px;
+    float: left;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#menu li a {
+    display: block;
+    padding: 10px;
+}
+
+#tresc {
+    width: 700px;
+    float: right;
+}
+
+
+.NotHOpis {
+    color: black;
+    background: white;
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+td {
+    border: solid 0px black;
+    padding: 0px;
+    color: black;
+    background: white;
+}
+
+th {
+    border: solid 0px black;
+    padding: 0px;
+    color: black;
+    background: white;
+}
+
+
+.skrot-n {
+    width: 50px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    text-align: center;
+    padding: 4px;
+}
+
+.opis-n {
+    width: 300px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    text-align: center;
+    padding: 4px;
+}
+
+.kod-n {
+    width: 100px;
+    font-weight: bold;
+    color: white;
+    background: black;
+    text-align: center;
+    padding: 4px;
+}
+
+
+.skrot {
+    text-align: center;
+    font-family: "Courier New", monospace;
+
+}
+
+.opis {
+    text-align: left;
+    font-weight: normal;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.kod {
+    text-align: left;
+    font-family: "Courier New", monospace;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.NotHOpisseparator {
+    color: black;
+    background: black;
+    height: 1px;
+}
+
+code {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+em {
+    font-family: "Times New Roman", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: rgb(98,104,223);
+    background: rgb(255,255,255);
+}
+
+a:visited {
+    color: rgb(98,104,223);
+    background: white;
+}
+
+a:active {
+    color: rgb(220,53,5);
+    background: rgb(254,203,188);
+}
+
+a:hover {
+    color: white;
+    background: black;
+}
+
+div#menu a {
+    padding: 2px;
+    white-space: nowrap;
+    
+}
+
+tr {
+/*    border-bottom: 1px solid black; */
+}
+
+
+.separator {
+    border-bottom: 3px solid black;
+/*    background: red;
+    padding: 20px; */
+}

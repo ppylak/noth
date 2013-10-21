@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="UnitHighlighterProcs">
+  <procedure name="GetHighlighters" visibility="public">
+    <parameters>
+      <parameter name="AOwner" type="TComponent" />
+      <parameter name="AHighlighters" type="TStringList" />
+      <parameter name="AppendToList" type="Boolean" />
+    </parameters>
+  </procedure>
+  <procedure name="SetHighlighterFiltersFromFile" visibility="public">
+    <parameters>
+      <parameter name="AHighlighters" type="TStringList" />
+      <parameter name="FileName" type="string" />
+    </parameters>
+  </procedure>
+  <function name="GetHighlightersFilter" visibility="public">
+    <parameters>
+      <parameter name="AHighlighters" type="TStringList" />
+      <parameter name="AAddAll" type="Boolean">
+        <value>
+          True
+        </value>
+      </parameter>
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="GetHighlighterFromFileExt" visibility="public">
+    <parameters>
+      <parameter name="AHighlighters" type="TStringList" />
+      <parameter name="Extension" type="string" />
+      <retval type="TSynCustomHighlighter" />
+    </parameters>
+  </function>
+  <function name="GetHighlighterFromFileName" visibility="public">
+    <parameters>
+      <parameter name="AHighlighters" type="TStringList" />
+      <parameter name="FileName" type="string" />
+      <retval type="TSynCustomHighlighter" />
+    </parameters>
+  </function>
+</namespace>

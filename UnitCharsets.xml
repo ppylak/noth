@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="UnitCharsets">
+  <function name="IsWideStringMappableToAnsi" visibility="public">
+    <parameters>
+      <parameter name="WS" type="string" paramflags="const" />
+      <retval type="Boolean" />
+    </parameters>
+  </function>
+  <function name="UnicodeStringToAnsiString" visibility="public">
+    <parameters>
+      <parameter name="s" type="string" />
+      <parameter name="cp" type="Integer" />
+      <retval type="RawByteString" />
+    </parameters>
+  </function>
+  <function name="AnsiStringToUnicodeString" visibility="public">
+    <parameters>
+      <parameter name="s" type="RawByteString" />
+      <parameter name="cp" type="Integer" />
+      <retval type="string" />
+    </parameters>
+  </function>
+  <function name="ISO88592ToWin1250" visibility="public">
+    <parameters>
+      <parameter name="s" type="AnsiString" />
+      <retval type="AnsiString" />
+    </parameters>
+  </function>
+  <function name="Win1250ToISO88592" visibility="public">
+    <parameters>
+      <parameter name="s" type="AnsiString" />
+      <retval type="AnsiString" />
+    </parameters>
+  </function>
+</namespace>

@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <MainUnitHasUsesSectionForAllUnits Value="False"/>
+        <MainUnitHasCreateFormStatements Value="False"/>
+        <MainUnitHasTitleStatement Value="False"/>
+      </Flags>
+      <MainUnit Value="0"/>
+      <Title Value="NotHContMenu64"/>
+      <UseAppBundle Value="False"/>
+      <ResourceType Value="res"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <i18n>
+      <EnableI18N LFM="False"/>
+    </i18n>
+    <VersionInfo>
+      <StringTable ProductVersion=""/>
+    </VersionInfo>
+    <BuildModes Count="1" Active="Default">
+      <Item1 Name="Default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+      </local>
+    </RunParams>
+    <Units Count="5">
+      <Unit0>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="NotHContMenu64"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="23" Y="16"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="contmain64.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ContMain64"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="66"/>
+        <CursorPos X="15" Y="90"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="ContMenu_TLB.pas"/>
+        <UnitName Value="ContMenu_TLB"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="20"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="C:\lazarus\fpc\2.4.2\source\packages\winunits-base\src\shlobj.pp"/>
+        <UnitName Value="shlobj"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1929"/>
+        <CursorPos X="1" Y="1951"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="C:\lazarus\fpc\2.4.2\source\packages\winunits-base\src\comobj.pp"/>
+        <UnitName Value="comobj"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="165"/>
+        <CursorPos X="7" Y="144"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+    </Units>
+    <JumpHistory Count="15" HistoryIndex="14">
+      <Position1>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <Caret Line="8" Column="23" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <Caret Line="19" Column="5" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <Caret Line="20" Column="7" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <Caret Line="17" Column="17" TopLine="1"/>
+      </Position4>
+      <Position5>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <Caret Line="21" Column="1" TopLine="1"/>
+      </Position5>
+      <Position6>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <Caret Line="1" Column="3" TopLine="1"/>
+      </Position6>
+      <Position7>
+        <Filename Value="contmain64.pas"/>
+        <Caret Line="46" Column="22" TopLine="25"/>
+      </Position7>
+      <Position8>
+        <Filename Value="contmain64.pas"/>
+        <Caret Line="22" Column="59" TopLine="2"/>
+      </Position8>
+      <Position9>
+        <Filename Value="contmain64.pas"/>
+        <Caret Line="90" Column="15" TopLine="72"/>
+      </Position9>
+      <Position10>
+        <Filename Value="contmain64.pas"/>
+        <Caret Line="97" Column="15" TopLine="79"/>
+      </Position10>
+      <Position11>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <Caret Line="21" Column="6" TopLine="1"/>
+      </Position11>
+      <Position12>
+        <Filename Value="contmain64.pas"/>
+        <Caret Line="91" Column="20" TopLine="72"/>
+      </Position12>
+      <Position13>
+        <Filename Value="contmain64.pas"/>
+        <Caret Line="23" Column="7" TopLine="5"/>
+      </Position13>
+      <Position14>
+        <Filename Value="NotHContMenu64.lpr"/>
+        <Caret Line="21" Column="1" TopLine="1"/>
+      </Position14>
+      <Position15>
+        <Filename Value="contmain64.pas"/>
+        <Caret Line="20" Column="60" TopLine="2"/>
+      </Position15>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="9"/>
+    <PathDelim Value="\"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <UnitOutputDirectory Value="..\.."/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+      </SyntaxOptions>
+    </Parsing>
+    <CodeGeneration>
+      <SmartLinkUnit Value="True"/>
+      <SmallerCode Value="True"/>
+      <TargetCPU Value="x86_64"/>
+      <TargetOS Value="win64"/>
+      <Optimizations>
+        <VariablesInRegisters Value="True"/>
+        <UncertainOptimizations Value="True"/>
+        <OptimizationLevel Value="3"/>
+      </Optimizations>
+    </CodeGeneration>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+      </Debugging>
+      <Options>
+        <ExecutableType Value="Library"/>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerMessages>
+        <UseMsgFile Value="True"/>
+      </CompilerMessages>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>
