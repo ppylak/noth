@@ -1,25 +1,40 @@
 
 
 
-EI	phonetics_i
-LI	phonetics_i_long
+#EI	phonetics_i
+#LI	phonetics_i_long
 
 
-EE	phonetics_e
-EH	phonetics_ash
-EA	phonetics_a
+#EE	phonetics_e
+#EH	phonetics_ash
+#EA	phonetics_a
 
 
-EO	phonetics_o
-LO	phonetics_o_long
+#EO	phonetics_o
+#LO	phonetics_o_long
 
 
-EU	phonetics_u
-LU	phonetics_u_long
+#EU	phonetics_u
+#LU	phonetics_u_long
 
-EW	phonetics_wedge
+#EW	phonetics_wedge
 
-ES	phonetics_schwa_long
-LS	phonetics_schwa
+#ES	phonetics_schwa_long
+#LS	phonetics_schwa
+
+
+
+EI	phonetics_i_short
+EJ	phonetics_i_long
+
+EO	phonetics_o_short
+EO	phonetics_o_long
+
+EE	phonetics_a_wedge
+EA	phonetics_a_long
+
+ES	phonetics_e_schwa
+EL	phonetics_e_schwa_long
+
 
 

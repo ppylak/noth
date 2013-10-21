@@ -104,10 +104,9 @@ html5_doctype_1_0_transitional	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Tran
 html5_doctype_1_0_frameset	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">|^	B
 
 
-html5_meta_charset_iso_8859_2	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />|^	B
-html5_meta_charset_windows_1250	<meta http-equiv="Content-Type" content="text/html; charset=windows-1250" />|^	B
-html5_meta_charset_utf_8	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />|^	B
-
+html5_meta_charset_iso_8859_2	<meta charset="iso-8859-2" />|^	B
+html5_meta_charset_windows_1250	<meta charset="windows-1250" />|^	B
+html5_meta_charset_utf_8	<meta charset="UTF-8" />|^	B
 
 html5_element_html	<html>\n|^\n</html>	B
 html5_element_html_with_ns	<html xmlns="http://www.w3.org/1999/xhtml">\n  |^\n</html>	B
@@ -222,12 +221,12 @@ html5_element_map	<map name="">\n  |^\n</map>
 html5_element_area	<area href="|" alt="" shape="" coords="" />^
 
 
-html5_style1	<link rel="stylesheet" type="text/css" href="style.css" />\n|^	B
-html5_style2	<link rel="stylesheet" type="text/css" href="|" />\n^	B
-html5_style3	<style type="text/css">\n|^\n</style>	B
-html5_style4	<link rel="stylesheet" type="text/css" href="print.css" media="print" />\n|^	B
-html5_style5	<link rel="stylesheet" type="text/css" href="style.css" />\n<?xml-stylesheet type="text/css" href="style.css" ?>|^	B
-html5_style6	<link rel="stylesheet" type="text/css" href="|" />\n<?xml-stylesheet type="text/css" href="" ?>^	B
+html5_style1	<link rel="stylesheet" href="style.css" />\n|^	B
+html5_style2	<link rel="stylesheet" href="|" />\n^	B
+html5_style3	<style>\n|^\n</style>	B
+html5_style4	<link rel="stylesheet" href="print.css" media="print" />\n|^	B
+html5_style5	<link rel="stylesheet" href="style.css" />\n<?xml-stylesheet type="text/css" href="style.css" ?>|^	B
+html5_style6	<link rel="stylesheet" href="|" />\n<?xml-stylesheet type="text/css" href="" ?>^	B
 
 
 html5_element_hr	<hr />^|
@@ -260,14 +259,15 @@ html5_element_fieldset	<fieldset>\n  |^\n</fieldset>
 html5_element_legend	<legend>\n  |^\n</legend>
 
 
-html5_script1	<script type="text/javascript" src="|">^</script>	B
-html5_script2	<script type="text/javascript">\n    ^|\n</script>	B
+html5_script1	<script src="|">^</script>	B
+html5_script2	<script>\n    ^|\n</script>	B
 html5_script3	<noscript>\n    ^|\n</noscript>	B
 
+html5_page_1	<!DOCTYPE html>\n<html>\n  <head>\n    <title>|</title>\n    <meta charset="UTF-8" />\n  </head>\n<body>\n^\n</body>\n</html>	B
+html5_page_2	<!DOCTYPE html>\n<html lang="pl">\n  <head>\n    <title>|</title>\n    <meta charset="UTF-8" />\n  </head>\n<body>\n^\n</body>\n</html>	B
+html5_page_3	<!DOCTYPE html>\n<html lang="pl">\n  <head>\n    <title>|</title>\n    <meta charset="UTF-8" />\n    <style>\n    </style>\n  </head>\n<body>\n^\n</body>\n</html>	B
+html5_page_4	<!DOCTYPE html>\n<html lang="pl">\n  <head>\n    <title>|</title>\n    <meta charset="UTF-8" />\n    <link rel="stylesheet" href="style.css" />\n  </head>\n<body>\n^\n</body>\n</html>	B
 
-html5_page_1	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">\n  <head>\n    <title>|</title>\n    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n  </head>\n<body>\n^\n</body>\n</html>	B
-html5_page_2	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">\n  <head>\n    <title>|</title>\n    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n    <style type="text/css">\n    \n    </style>\n  </head>\n<body>\n^\n</body>\n</html>	B
-html5_page_3	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl" lang="pl">\n  <head>\n    <title>|</title>\n    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />\n    <link rel="stylesheet" type="text/css" href="style.css" />\n  </head>\n<body>\n^\n</body>\n</html>	B
 
 html5_meta_author	<meta name="author" content="Lorem Ipsum" />\n|^	B
 html5_meta_copyright	<meta name="copyright" content="(c)2007 Lorem Ipsum" />\n|^	B
@@ -314,4 +314,17 @@ html5_meta_all	<meta name="author" content="Lorem Ipsum" />\n<meta name="copyrig
 html5_lorem_ipsum_1	^|Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\nSuspendisse nunc pede, aliquet at, tincidunt id, sodales in,\nnulla. Pellentesque viverra ipsum ac quam. In hac habitasse\nplatea dictumst. In eget tellus. Nullam placerat, felis in\nscelerisque sollicitudin, magna velit dictum mi, ac molestie\nquam urna nec nibh. Morbi facilisis. Suspendisse pulvinar\nnisl at elit. Sed euismod orci sed est. Donec tempor tellus\nsit amet ante. Aenean quis leo. Pellentesque habitant morbi\ntristique senectus et netus et malesuada fames ac turpis\negestas. Duis sapien. Nam elementum velit nec mauris.\nCurabitur non turpis quis felis placerat luctus.\nPellentesque id mi sit amet quam fermentum convallis. Duis\nnec lacus. Donec laoreet. Suspendisse vel nisl eget nibh\ndapibus ultricies. Donec ornare. Vestibulum lorem. In massa\nneque, dapibus a, tempor ut, ultricies at, neque. Curabitur\nat risus. Sed ut magna vel odio molestie tincidunt. Mauris\nconsectetuer, velit a elementum malesuada, pede mauris\ninterdum risus, vel commodoarcu risus eget tellus. Proin\nsagittis, felis non dictum sodales, libero est varius diam,\neget vehicula lorem metus eu velit.	B
 html5_lorem_ipsum_2	^|Lorem ipsum dolor sit amet, consectetuer adipiscing elit.\nSuspendisse nunc pede, aliquet at, tincidunt id, sodales in,\nnulla. Pellentesque viverra ipsum ac quam. In hac habitasse\nplatea dictumst. In eget tellus. Nullam placerat, felis in\nscelerisque sollicitudin, magna velit dictum mi, ac molestie\nquam urna nec nibh. Morbi facilisis. Suspendisse pulvinar\nnisl at elit. Sed euismod orci sed est. Donec tempor tellus\nsit amet ante. Aenean quis leo. Pellentesque habitant morbi\ntristique senectus et netus et malesuada fames ac turpis\negestas. Duis sapien. Nam elementum velit nec mauris.\n\nCurabitur non turpis quis felis placerat luctus.\nPellentesque id mi sit amet quam fermentum convallis. Duis\nnec lacus. Donec laoreet. Suspendisse vel nisl eget nibh\ndapibus ultricies. Donec ornare. Vestibulum lorem. In massa\nneque, dapibus a, tempor ut, ultricies at, neque. Curabitur\nat risus. Sed ut magna vel odio molestie tincidunt. Mauris\nconsectetuer, velit a elementum malesuada, pede mauris\ninterdum risus, vel commodoarcu risus eget tellus. Proin\nsagittis, felis non dictum sodales, libero est varius diam,\neget vehicula lorem metus eu velit.	B
 
+
+
+
+
+
+html5_element_nav	<nav>\n|^\n</nav>
+html5_element_header	<header>\n|^\n</header>
+html5_element_footer	<footer>\n|^\n</footer>
+html5_element_article	<article>\n|^\n</article>
+html5_element_section	<section>\n|^\n</section>
+
+html5_element_hgroup	<hgroup>\n|^\n</hgroup>
+html5_element_aside	<aside>\n|^\n</aside>
 

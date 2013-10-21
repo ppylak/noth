@@ -1,14 +1,11 @@
-Szpyra
+McMillan
 	Vowels
-		i|phonetics_i
-		iː|phonetics_i_long
-		e|phonetics_e
-		æ|phonetics_ash
-		ɑː|phonetics_a
-		ɔ|phonetics_o
-		ɔːphonetics_o_long
-		u|phonetics_u
-		uː|phonetics_u_long
-		ʌ|phonetics_wedge
-		əːphonetics_schwa_long
-		ə|phonetics_schwa
+		i
+			i short: sit|phonetics_i_short
+			i long: see|phonetics_i_long
+			o short: hot|phonetics_o_short
+			o long: caught|phonetics_o_long
+			a wedge: cat|phonetics_a_wedge
+			a long: arm|phonetics_a_long
+			schwa: ago|phonetics_e_schwa
+			schwa long: bird|phonetics_e_schwa_long

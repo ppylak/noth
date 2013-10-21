@@ -1,0 +1,11 @@
+US	text_software
+UO	text_option
+UF	text_filename
+UV	text_variable
+UC	text_caution
+UI	text_image
+UI	text_impatient
+UL	text_listing
+UX	text_xyz
+UD	text_download
+DX	text_mdlink

@@ -2,3 +2,15 @@ Interpunkcja
 	Przecinek|text_przecinek
 	Kropka|text_kropka
 	Quot|text_quot
+My
+	IMAGE|text_image
+	LISTING|text_listing
+	SPAN: sftware|text_software
+	SPAN: filename|text_filename
+	SPAN: variable|text_variable
+	SPAN: option|text_option
+	DIV: caution|text_caution
+	DIV: impatient|text_impatient
+	DIV: download|text_download
+	x.y.z|text_xyz
+	md link|text_mdlink
