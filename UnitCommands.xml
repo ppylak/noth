@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<namespace name="UnitCommands">
+  <const name="blmNormal" type="TBLMode">
+    <value>
+      blmNormal
+    </value>
+  </const>
+  <const name="blmAlwaysBlock" type="TBLMode">
+    <value>
+      blmAlwaysBlock
+    </value>
+  </const>
+  <const name="blmAlwaysLines" type="TBLMode">
+    <value>
+      blmAlwaysLines
+    </value>
+  </const>
+  <const name="csmAll" type="TCommandsShowMode">
+    <value>
+      csmAll
+    </value>
+  </const>
+  <const name="csmWithShortcuts" type="TCommandsShowMode">
+    <value>
+      csmWithShortcuts
+    </value>
+  </const>
+  <const name="csmWithoutShortcuts" type="TCommandsShowMode">
+    <value>
+      csmWithoutShortcuts
+    </value>
+  </const>
+  <enum name="TBLMode">
+    <element name="blmNormal" />
+    <element name="blmAlwaysBlock" />
+    <element name="blmAlwaysLines" />
+  </enum>
+  <class name="TCommand">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+    </ancestor>
+    <members>
+      <field name="CommandID" type="string" visibility="public" />
+      <field name="CommandText" type="string" visibility="public" />
+      <field name="CommandDescription" type="string" visibility="public" />
+      <field name="Group" type="string" visibility="public" />
+      <field name="BLMode" type="TBLMode" visibility="public" />
+      <function name="GetCommandName" visibility="public">
+        <parameters>
+          <retval type="string" />
+        </parameters>
+      </function>
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="ACommandID" type="string" />
+          <parameter name="ACommandText" type="string" />
+          <parameter name="AGroup" type="string" />
+          <parameter name="ABLMode" type="TBLMode" />
+        </parameters>
+      </constructor>
+    </members>
+  </class>
+  <enum name="TCommandsShowMode">
+    <element name="csmAll" />
+    <element name="csmWithShortcuts" />
+    <element name="csmWithoutShortcuts" />
+  </enum>
+  <class name="TCommandsSet">
+    <ancestor name="TObject" namespace="System">
+      <methodref name="Create" visibility="public" procflags="constructor">
+      </methodref>
+      <methodref name="Free" visibility="public">
+      </methodref>
+      <methodref name="InitInstance" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="CleanupInstance" visibility="public">
+      </methodref>
+      <methodref name="ClassType" visibility="public">
+      </methodref>
+      <methodref name="ClassName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassNameIs" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassParent" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="ClassInfo" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="InstanceSize" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="InheritsFrom" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodAddress" visibility="public" procflags="class overload">
+      </methodref>
+      <methodref name="MethodName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="FieldAddress" visibility="public" procflags="overload">
+      </methodref>
+      <methodref name="GetInterface" visibility="public">
+      </methodref>
+      <methodref name="GetInterfaceEntry" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="GetInterfaceTable" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="UnitName" visibility="public" procflags="class">
+      </methodref>
+      <methodref name="Equals" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="GetHashCode" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="ToString" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="SafeCallException" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="AfterConstruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="BeforeDestruction" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Dispatch" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="DefaultHandler" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="NewInstance" visibility="public" procflags="class virtual">
+      </methodref>
+      <methodref name="FreeInstance" visibility="public" procflags="virtual">
+      </methodref>
+      <methodref name="Destroy" visibility="public" procflags="destructor virtual">
+      </methodref>
+    </ancestor>
+    <members>
+      <field name="FName" type="string" visibility="private" />
+      <field name="FPrefix" type="string" visibility="private" />
+      <field name="FFileExts" type="TStringList" visibility="private" />
+      <field name="FCommands" type="TStringList" visibility="private" />
+      <field name="FShortcuts" type="TStringList" visibility="private" />
+      <field name="FTree" type="TStringList" visibility="private" />
+      <field name="FAutoCompleteList" type="TStringList" visibility="private" />
+      <function name="GetCommand" visibility="private">
+        <parameters>
+          <parameter name="Index" type="Integer" />
+          <retval type="TCommand" />
+        </parameters>
+      </function>
+      <function name="GetCount" visibility="private">
+        <parameters>
+          <retval type="Integer" />
+        </parameters>
+      </function>
+      <property name="Name" visibility="public" read="FName" type="string" />
+      <property name="Prefix" visibility="public" read="FPrefix" type="string" />
+      <property name="Count" visibility="public" read="GetCount" type="Integer" />
+      <property name="Command" visibility="public" read="GetCommand" type="TCommand" />
+      <property name="AutoCompleteList" visibility="public" read="FAutoCompleteList" type="TStringList" />
+      <constructor name="Create" visibility="public">
+        <parameters>
+          <parameter name="AName" type="string" />
+          <parameter name="APrefix" type="string" />
+          <parameter name="AFileExts" type="TStrings" />
+          <parameter name="Path" type="string">
+            <value>
+              
+            </value>
+          </parameter>
+        </parameters>
+      </constructor>
+      <destructor name="Destroy" visibility="public">
+        <parameters>
+        </parameters>
+      </destructor>
+      <procedure name="FillTreeView" visibility="public">
+        <parameters>
+          <parameter name="TreeView" type="TTreeView" />
+          <parameter name="CommandsShowMode" type="TCommandsShowMode" />
+        </parameters>
+      </procedure>
+      <function name="FindCommand" visibility="public">
+        <parameters>
+          <parameter name="CommandID" type="string" />
+          <retval type="TCommand" />
+        </parameters>
+      </function>
+      <procedure name="FindCommandsByShortcut" visibility="public">
+        <parameters>
+          <parameter name="Shortcut" type="string" />
+          <parameter name="CommandsList" type="TStringList" />
+          <parameter name="ClearList" type="Boolean">
+            <value>
+              False
+            </value>
+          </parameter>
+        </parameters>
+      </procedure>
+      <function name="GetShortcutsForCommand" visibility="public">
+        <parameters>
+          <parameter name="Command" type="TCommand" />
+          <retval type="string" />
+        </parameters>
+      </function>
+      <procedure name="LoadConf" visibility="public">
+        <parameters>
+          <parameter name="Path" type="string" />
+        </parameters>
+      </procedure>
+      <function name="UseForExt" visibility="public">
+        <parameters>
+          <parameter name="Ext" type="string" />
+          <retval type="Boolean" />
+        </parameters>
+      </function>
+    </members>
+  </class>
+  <function name="GetCommandsSetList" visibility="public">
+    <parameters>
+      <retval type="TStringList" />
+    </parameters>
+  </function>
+  <procedure name="RegisterCommandsSet" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="CommandsSet" type="TCommandsSet" />
+    </parameters>
+  </procedure>
+  <procedure name="RegisterCommandsSet" visibility="public" procflags="overload">
+    <parameters>
+      <parameter name="FileName" type="string" />
+      <parameter name="ConfPath" type="string" />
+    </parameters>
+  </procedure>
+  <procedure name="UnregisterCommandsSet" visibility="public">
+  </procedure>
+  <procedure name="GetCommandsSetsForExt" visibility="public">
+    <parameters>
+      <parameter name="Ext" type="string" />
+      <parameter name="CommandsSets" type="TStringList" />
+    </parameters>
+  </procedure>
+  <function name="ExtractFileExtN" visibility="public">
+    <parameters>
+      <parameter name="FileName" type="string" paramflags="const" />
+      <retval type="string" />
+    </parameters>
+  </function>
+</namespace>

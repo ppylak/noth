@@ -1,0 +1,19 @@
+#pojemnik {
+width: 100%;
+}
+#menu {
+    display: none;
+}
+#tekst {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;    
+}
+
+td, th {
+    border: 1px solid black;
+}
+
