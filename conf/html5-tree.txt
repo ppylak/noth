@@ -1,8 +1,9 @@
 Strona
 	Szablony stron
-		XHTML 1.0 Strict, pl, utf-8, bez stylów|html5_page_1
-		XHTML 1.0 Strict, pl, utf-8, style wew.|html5_page_2
-		XHTML 1.0 Strict, pl, utf-8, style zew.|html5_page_3
+		HTML 5, utf-8, bez stylów|html5_page_1
+		HTML 5, pl, utf-8, bez stylów|html5_page_2
+		HTML 5, pl, utf-8, style wew.|html5_page_3
+		HTML 5, pl, utf-8, style zew.|html5_page_4
 	Komentarz|html5_comment
 	DOCTYPE
 		DOCTYPE XHTML 1.0 strict|html5_doctype_1_0_strict
@@ -273,3 +274,11 @@ Ogonki
 		Ô|html5_entity_fr_ocirc2
 		u|html5_entity_fr_ucirc
 		U|html5_entity_fr_ucirc2
+HTML5
+	nav|html5_element_nav
+	header|html5_element_header
+	footer|html5_element_footer
+	article|html5_element_article
+	section|html5_element_section
+	hgroup|html5_element_hgroup
+	aside|html5_element_aside

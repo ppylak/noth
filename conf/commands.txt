@@ -10,6 +10,8 @@
 # prefix - przedrostek dodawany do plików zawieraj¹cych zbiór komend, skrótów oraz wygl¹d drzewa
 # lista_rozszerzeñ - lista rozszerzeñ plików, do których ma byæ stosowany ten zbiór komend. Separatorem jest przecinek
 
+HTML5	html5	html,htm,xhtml
+
 XHTML	xhtml	html,htm,xhtml
 CSS	css	css
 
@@ -19,3 +21,5 @@ Smarty	smarty	tpl
 XML	xml	xml
 
 TXT	txt	txt
+
+PHONETICS	phonetics	txt

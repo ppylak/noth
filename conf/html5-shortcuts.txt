@@ -75,6 +75,9 @@ D3	html5_element_h3
 D4	html5_element_h4
 D5	html5_element_h5
 D6	html5_element_h6
+DG	html5_element_hgroup
+
+
 
 EE	html5_element_em
 ED	html5_element_dfn
@@ -147,6 +150,7 @@ DI	html5_element_img
 B1	html5_page_1
 B2	html5_page_2
 B3	html5_page_3
+B4	html5_page_4
 
 
 
@@ -276,4 +280,12 @@ GL	html5_element_legend
 
 
 
+
+
+DN	html5_element_nav
+DH	html5_element_header
+DF	html5_element_footer
+DA	html5_element_article
+DS	html5_element_aside
+DS	html5_element_section
 

@@ -4,3 +4,21 @@ text_quot	"^|"
 
 
 #text_pl_quot ju¿ zdefiniowany w HTML: ^QP
+
+text_software	<span class="software">^|</span>
+text_option	<span class="option">^|</span>
+text_filename	<span class="filename">^|</span>
+text_variable	<span class="variable">^|</span>
+text_caution	<div class="caution">\n^|\n</div>
+text_impatient	<div class="impatient">\n^|\n</div>
+#text_image	<image>\n1.png\n\n^|\n</image>
+text_image	<figure>\n<figcaption><strong>Figure x.y.</strong> |</figcaption>\n<img src="" alt="" />\n</figure>
+#text_listing	<listing>\nTITLE\nphp\n\n^|\n</listing>
+text_xyz	x.y.z
+text_download	<download>\n01-01-01-start.zip\n^|\nPlik startowy zadania 1.1.1\n</download>
+
+
+text_listing	<figure>\n<figcaption><strong>Listing x.y.</strong> |</figcaption>\n<pre>\n^\n</pre>\n</figure>
+
+
+text_mdlink	[^|](^)
