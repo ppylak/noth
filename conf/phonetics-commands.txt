@@ -41,3 +41,6 @@ phonetics_a_long	^|&#x0251;&#x02D0;
 phonetics_e_schwa	^|&#x0259;
 phonetics_e_schwa_long	^|&#x025c;&#x02D0;
 
+phonetics_ash	^|æ
+
+

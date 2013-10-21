@@ -37,4 +37,5 @@ ES	phonetics_e_schwa
 EL	phonetics_e_schwa_long
 
 
+EL	phonetics_ash
 
