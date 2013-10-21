@@ -1,7 +1,7 @@
 # Plik definiuje domyœlne skojarzenia "kolorowaczy"
 # z typami plików (rozszerzenia), do których maj¹ byæ u¿ywane
 
-WebPhpCli=php,php3,php4,php5,phtml
+# WebPhpCli=php,php3,php4,php5,phtml
 WebWml=wml
 WebCss=css
 WebHtml=htm,html,shtml,xhtml,mht,mhtml,php,php3,php4,php5,phtml,tpl
